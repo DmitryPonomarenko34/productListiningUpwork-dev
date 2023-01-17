@@ -1,0 +1,63 @@
+:root {
+  --default-color: #fff;
+  --accent-color: #FF6F00;
+  --primary-color: #000;
+  --bg-color: #313131;
+}
+
+%inter-regular {
+  font-weight: 400;
+  font-family: "Inter-regular", sans-serif;
+}
+
+%inter-semibold {
+  font-weight: 600;
+  font-family: "Inter-semiBold", sans-serif;
+}
+
+%inter-bold {
+  font-weight: 700;
+  font-family: "Inter-Bold", sans-serif;
+}
+
+%bg {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@mixin laptop-L {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin tablet-L {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 630px) {
+    @content;
+  }
+}
+
+@mixin portrait-phones {
+  @media (max-width: 530px) {
+    @content;
+  }
+}
+
+@mixin mobile-L {
+  @media (max-width: 425px) {
+    @content;
+  }
+}
