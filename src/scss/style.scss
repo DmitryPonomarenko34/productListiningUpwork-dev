@@ -5,4 +5,133 @@
 @import "global";
 @import "components/header";
 @import "components/footer";
+
+.first {
+  height: 100vh; 
+  background-image: url("@img/icons/multi/spriteMulti.svg#bg");
+
+  @extend %bg;
+}
+
+.info {
+  max-width: 1144px;
+  margin: 0 auto;
+  text-align: center;
+
+  &__welcome-text {
+    text-align: center;
+    font-size: 25px;
+    color: var(--default-color);
+    margin-bottom: 19px;
+
+    @extend %inter-semibold;
+  }
+
+  &__break-text {
+    display: block;
+  }
+
+  &__welcome-ic {
+    color: transparent;
+    text-shadow: 0 0 1px #fff;
+
+    &::before {
+      content: attr(title);
+      position: absolute;
+      text-shadow: 0 0 0 #000;
+    }
+  }
+
+  &__title {
+    padding-bottom: 73px;
+    letter-spacing: -2.8px;
+    font-size: 70px;
+    line-height: 85px;
+    color: #fff; 
+    
+    @extend %inter-bold;
+  }
+
+  &__title-accent {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 113%;
+      height: 100%;
+      bottom: -60px;
+      right: -64px;
+      background-image: url("@img/icons/multi/spriteMulti.svg#decor_path_line");
+
+      @extend %bg;
+    }
+  }
+
+  &__text {
+    max-width: 670px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 24px;
+    color: #fff;
+    margin-bottom: 40px;
+  }
+
+  &__text-accent {
+    display: inline-block;
+    color: var(--accent-color);
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    max-width: 811px;
+    margin: 0 auto;
+  }
+
+  &__link-phone {
+    position: relative;
+    display: inline-block;
+    padding: 10.5px 104px 13.5px 136px;
+    height: 51px;
+    border: 1px solid var(--accent-color);
+    border-radius: 5px;
+    color: #fff;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 103px;
+      top: 13px;
+      width: 22px;
+      height: 22px;
+      background-image: url('@img/icons/mono/phone.svg');
+
+      @extend %bg;
+    }
+  }
+
+  &__box-link {
+    margin-right: 10px;
+  }
+}
+
+.ecomers {
+		&__box {
+		}
+
+		&__box-info {
+		}
+
+		&__box-accent {
+		}
+
+		&__box-text {
+		}
+}
+
+
+
+
+
 @import "media";

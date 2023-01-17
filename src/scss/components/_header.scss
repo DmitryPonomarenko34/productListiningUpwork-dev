@@ -1,14 +1,38 @@
 .header {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	padding-top: 49px;
+
 	&__inner {
     display: flex;
+		align-items: center;
     justify-content: space-between;
-    background-color: #000;
+	}
+
+	&__container {
+		max-width: 1669px;
 	}
 
 	&__link {
+		position: relative;
+		padding: 14px 75px;
+		line-height: 24px;
+		border-radius: 5px;
+		transform: translateY(11px);
+		background-color: #FF6F00;
+		color: #fff;
+
+		&::before {
+			content: '';
+			position: absolute;
+			right: 15px;
+			width: 25px;
+			height: 25px;
+			background-image: url('@img/icons/mono/arrow-right.svg');
+
+			@extend %bg;
+		}
 	}
 }
-.container {
-}
-.logo {
-}
+
