@@ -7,7 +7,7 @@
 @import "components/footer";
 
 .first {
-  height: 55.95vh;
+  min-height: 1214px;
   background-image: url("@img/icons/multi/spriteMulti.svg#bg");
 
   @extend %bg;
@@ -531,7 +531,7 @@
 }
 
 .faq {
-  padding: 118px 0 117px;
+  padding: 118px 0 103px;
   &__title {
     margin-bottom: 100px;
   }
