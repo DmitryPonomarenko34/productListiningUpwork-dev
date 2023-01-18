@@ -54,6 +54,14 @@ body {
   @extend %inter-bold;
 }
 
+.second-title {
+  font-size: 40px;
+  line-height: 49px;
+  letter-spacing: -1.6px;
+
+  @extend %inter-bold;
+}
+
 .link {
   display: inline-block;
   padding: 14px 45px 15px 44px;

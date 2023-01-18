@@ -214,7 +214,7 @@
 }
 
 .product {
-  padding: 105px 0;
+  padding: 105px 0 37px;
   &__inner {
   }
 
@@ -259,6 +259,55 @@
     opacity: 0;
     z-index: -1;
     transition: ease 0.3s opacity;
+  }
+}
+
+.pricing {
+  padding: 120px 0;
+  background-color: #F8F8F8;
+
+  &__info {
+    text-align: center;
+    
+  }
+
+  &__text {
+  }
+
+  &__text-accent {
+  }
+
+  &__toggle {
+  }
+
+  &__toggle-text {
+  }
+
+  &__toggle-checkbox {
+  }
+
+  &__items {
+  }
+
+  &__item {
+  }
+
+  &__item-title {
+  }
+
+  &__item-text {
+  }
+
+  &__item-num {
+  }
+
+  &__list {
+  }
+
+  &__list-item {
+  }
+
+  &__item-price {
   }
 }
 
