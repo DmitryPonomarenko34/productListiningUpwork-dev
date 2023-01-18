@@ -26,6 +26,15 @@
   background-size: cover;
 }
 
+%checkbox-hidden,
+%radio-hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+
 @mixin laptop-L {
   @media (max-width: 1200px) {
     @content;
