@@ -109,4 +109,44 @@
   }
 }
 
+.brands {
+
+  &__inner {
+    text-align: center;
+  }
+
+  &__text-accent {
+    @extend %inter-bold;
+  }
+
+  &__text-accent,
+  &__text  {
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: -1.2px;
+  }
+
+  &__text {
+    margin-bottom: 37px;
+  }
+
+  &__text-caption {
+    max-width: 1330px;
+    margin: 0 auto;
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    letter-spacing: 0;
+
+    &--second {
+      margin-bottom: 41px;
+    }
+
+  }
+
+  &__accent-text {
+    margin-bottom: 102px;
+  }
+}
+
 @import "media";

@@ -141,6 +141,53 @@ body {
       margin-right: 34px;
     }
 	}
+
+  &--second {
+    padding-top: 32px;
+    .container--second {
+      max-width: 992px;
+    }
+    .partners__images {
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .partners__img {
+      img {
+        width: 146px;
+        height: 22px;
+      }
+
+      &--orgain img {
+        width: 106px;
+        height: 35px;
+      }
+
+      &--neutrogena img {
+        width: 143px;
+        height: 30px;
+      }
+
+      &--baleaf img {
+        width: 130px;
+        height: 32px;
+      }
+      
+      &--level img {
+        width: 112px;
+        height: 26px;
+      }
+      
+      &--elmer img {
+        width: 93px;
+        height: 54px;
+      }
+
+      &:not(:last-child) img {
+        margin-right: 50px;
+      }
+    }
+  }
 }
 
 
@@ -216,9 +263,17 @@ body {
     color: #818181;
     @extend %inter-bold;
   }
+
+  &--second {
+    .decor-line-1,
+    .decor-line-2 {
+      background-color: #000;
+    }
+  }
 }
 
 .video {
+  margin-bottom: -24.4%;
   &__box {
     position: relative;
     background: transparent linear-gradient(180deg, #00000000 0%, #7A7A7A 100%) 0% 0% no-repeat padding-box;
@@ -226,4 +281,9 @@ body {
     height: 774px;
     padding: 10px 14px 30px 17px;
   }
+
+  &-padding-top {
+    padding-top: 497px;
+  }
 }
+
