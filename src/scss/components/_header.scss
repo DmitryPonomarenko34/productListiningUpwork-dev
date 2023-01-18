@@ -10,29 +10,22 @@
     justify-content: space-between;
 	}
 
-	&__container {
-		max-width: 1669px;
-	}
-
 	&__link {
-		position: relative;
-		padding: 14px 75px;
+		display: flex;
+		justify-content: space-between;
+		padding: 14px 13px 14px 73px;
 		line-height: 24px;
 		border-radius: 5px;
 		transform: translateY(11px);
 		background-color: #FF6F00;
 		color: #fff;
-
-		&::before {
-			content: '';
-			position: absolute;
-			right: 15px;
-			width: 25px;
-			height: 25px;
-			background-image: url('@img/icons/mono/arrow-right.svg');
-
-			@extend %bg;
-		}
+	}
+	
+	&__link-ic {
+		margin-left: 38px;
+		stroke: #fff;
+		fill: none;
+		width: 25px;
+		height: 25px;
 	}
 }
-

@@ -92,23 +92,18 @@
   &__link-phone {
     position: relative;
     display: inline-block;
-    padding: 10.5px 104px 13.5px 136px;
+    padding: 10.5px 104px 13.5px 107px;
     height: 51px;
     border: 1px solid var(--accent-color);
     border-radius: 5px;
     color: #fff;
+  }
 
-    &::before {
-      content: '';
-      position: absolute;
-      left: 103px;
-      top: 13px;
-      width: 22px;
-      height: 22px;
-      background-image: url('@img/icons/mono/phone.svg');
-
-      @extend %bg;
-    }
+  &__link-phone-ic {
+    width: 22px;
+    height: 22px;
+    transform: translate(-3px,1px);
+    fill: var(--accent-color);
   }
 
   &__box-link {
@@ -117,17 +112,18 @@
 }
 
 .ecomers {
-		&__box {
-		}
+  padding: 71px 0 70px;
+  &__box {
+  }
 
-		&__box-info {
-		}
+  &__box-info {
+  }
 
-		&__box-accent {
-		}
+  &__box-accent {
+  }
 
-		&__box-text {
-		}
+  &__box-text {
+  }
 }
 
 
