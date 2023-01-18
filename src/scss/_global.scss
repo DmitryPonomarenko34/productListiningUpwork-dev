@@ -29,14 +29,21 @@ body {
 
 .container {
   max-width: 1394px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
 
-.container__fluid {
-	max-width: 1669px;
-  margin: 0 auto;
-  padding: 0 15px;
+  &,
+  &__fluid,
+  &--second {
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  &__fluid {
+	  max-width: 1669px;
+  }
+
+  &--second {
+    max-width: 1332px;
+  }
 }
 
 .title {
@@ -65,11 +72,82 @@ body {
 }
 
 .partners {
+  padding: 38px 0;
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 
-	&__img {
+  &__box-info {
+    max-width: 587px;
+    margin-right: 57px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #fff;
+  }
+
+  &__box-accent {
+    @extend %inter-bold;
+  }
+
+  &__box-text {
+  }
+
+  &__images {
+    display: flex;
+    align-items: center;
+  }
+
+	&__img  {
+    // margin-right: 10px;
+
+    img {
+      display: block;
+      width: 108px;
+      height: 40px;
+      object-fit: contain;
+      opacity: 0.5;
+      flex: 0 1 100%;
+    }
+
+    &--orgain img {
+      height: 25px;
+      width: 78px;
+    }
+
+     &--neutrogena img {
+      width: 105px;
+      height: 22px;
+    }
+
+     &--baleaf img {
+      width: 96px;
+      height: 25px;
+    }
+
+     &--level img {
+      width: 82px;
+      height: 19px;
+    }
+
+    &--elmer img {
+      height: 39px;
+      width: 68px;
+    }
+
+    &:not(:last-child) img {
+      margin-right: 34px;
+    }
 	}
 }
 
+
+.ecomers {
+  padding: 71px 0 70px;
+
+}
 .decor-line-1,
 .decor-line-2  {
   width: 100%;
