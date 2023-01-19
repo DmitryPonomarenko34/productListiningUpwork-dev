@@ -1,7 +1,21 @@
-@media (max-height: 2100px) {
-  // .video__box {
-  //   width: fit-content;
-  //   margin: 0 auto;
-  //   height: 400px;
-  // }
+@media (any-hover: hover) {
+  .faq {
+    &__item {
+      &:hover {
+        border-color: #FF6F00;
+        cursor: pointer;
+
+        .faq__item-title {
+          color: var(--accent-color);
+          transition: ease 0.2s color;
+        }
+
+        .faq__item-ic {
+          stroke: var(--accent-color);
+          transform: rotate(90deg);
+          transition: ease 0.2s color, ease 0.2s    transform;
+        }
+      }
+    }
+}
 }

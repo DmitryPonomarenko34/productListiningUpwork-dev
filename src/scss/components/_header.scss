@@ -13,16 +13,19 @@
 	&__link {
 		display: flex;
 		justify-content: space-between;
-		padding: 14px 13px 14px 73px;
+		padding: 14px 10px 14px 73px;
 		line-height: 24px;
 		border-radius: 5px;
 		transform: translateY(11px);
 		background-color: #FF6F00;
 		color: #fff;
+
+		@extend %inter-bold;
 	}
 	
 	&__link-ic {
-		margin-left: 38px;
+		margin-left: 34px;
+    margin-right: 4px;
 		stroke: #fff;
 		fill: none;
 		width: 25px;

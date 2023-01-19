@@ -65,8 +65,9 @@ body {
 }
 
 .link {
-  display: inline-block;
-  padding: 14px 45px 15px 44px;
+  display: inline-flex;
+  align-items: center;
+  padding: 15px 45px 15px 44px;
   letter-spacing: 0px;
   line-height: 28px;
   height: 51px;
@@ -200,9 +201,25 @@ body {
   }
 }
 
+.stars {
+  display: flex;
+  align-items: center;
+  &__ic {
+    width: 25px;
+    height: 25px;
+
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
+  }
+
+  &__ic {
+    fill: var(--accent-color);
+  }
+}
 
 .ecomers {
-  padding: 71px 0 70px;
+  padding: 70px 0;
 
 }
 .decor-line-1,
@@ -221,7 +238,7 @@ body {
   }
 
   &__inner {
-    padding: 5px;
+    padding: 5px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -235,7 +252,7 @@ body {
     color: #818181;
     font-size: 14px;
     line-height: 17px;
-
+    padding-left: 14px;
     @extend %inter-bold;
   }
 
@@ -279,6 +296,10 @@ body {
     .decor-line-2 {
       background-color: #000;
     }
+
+    .customers__inner {
+        background-color: #E5E5E5 ;
+    }
   }
 }
 
@@ -290,7 +311,7 @@ body {
     border-radius: 5px;
     height: 774px;
     width: 100%;
-    padding: 10px 14px 30px 17px;
+    padding: 12px 30px 31px;
   }
 
   &-padding-top {
