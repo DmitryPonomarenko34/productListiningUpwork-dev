@@ -14,11 +14,11 @@ export const images = () => {
     .pipe(app.gulp.dest(app.path.build.images))
     .pipe(app.gulp.src(app.path.src.images))
     .pipe(app.plugins.newer(app.path.build.images))
-    // .pipe(imagemin({
-    //   interlaced: true,
-    //   progressive: true,
-    //   optimizationLevel: 3,
-    // }))
+    .pipe(imagemin({
+      interlaced: true,
+      progressive: true,
+      optimizationLevel: 3,
+    }))
     .pipe(app.gulp.dest(app.path.build.images))
     .pipe(app.plugins.browserSync.stream());
 }
