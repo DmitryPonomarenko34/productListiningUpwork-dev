@@ -35,6 +35,12 @@
   position: absolute;
 }
 
+@mixin laptop-xl {
+  @media (max-width: 1400px) {
+    @content;
+  }
+}
+
 @mixin laptop-L {
   @media (max-width: 1200px) {
     @content;

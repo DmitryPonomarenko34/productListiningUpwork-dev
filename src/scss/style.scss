@@ -52,6 +52,7 @@
 
   &__title-accent {
     position: relative;
+    white-space: nowrap;
 
     &::before {
       content: '';
@@ -149,7 +150,7 @@
 }
 
 .achievements {
-  padding: 50px 0 28px;
+  padding: 50px 0 8px;
   background-color: #313131;
   &__container {
     padding-left: 153px;
@@ -158,12 +159,14 @@
   &__inner {
     display: flex;
     align-items: flex-start;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 
   &__item {
     text-align: center;     
     margin-right: 20px;
+    margin-bottom: 20px;
 
     &:nth-child(3n) {
       margin-right: 0;
@@ -258,7 +261,7 @@
 }
 
 .pricing {
-  padding: 103px 0;
+  padding: 103px 0 100px;
   background-color: #F8F8F8;
 
   &__info {
@@ -345,12 +348,14 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 63px;
+    margin-bottom: 47px;
     padding: 0 34px;
 
     .pricing__item {
       width: 30.333%;
       margin-right: 50px;
+      margin-bottom: 20px;
+
       &:nth-child(3n) {
         margin-right: 0;
       }
@@ -570,6 +575,7 @@
   &__item-box {
     position: relative;
     display: flex;
+    padding-right: 30px;
     justify-content: space-between;
     align-items: center;
   }
