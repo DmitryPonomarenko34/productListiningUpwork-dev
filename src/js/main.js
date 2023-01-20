@@ -31,16 +31,16 @@
   function inputIsChecked() {
      if (pricingInput.checked) {
       pricingLite.textContent = '39';
-      pricingLiteRange.textContent = 'year';
+      pricingLiteRange.textContent = 'month';
       pricingPro.textContent = '75';
-      pricingProRange.textContent = 'year';
+      pricingProRange.textContent = 'month';
 
       return
     }
 
     pricingLite.textContent = '49';
-    pricingProRange.textContent = 'month';
-    pricingLiteRange.textContent = 'month';
+    pricingProRange.textContent = 'monthly';
+    pricingLiteRange.textContent = 'monthly';
     pricingPro.textContent = '99';
   }
 
