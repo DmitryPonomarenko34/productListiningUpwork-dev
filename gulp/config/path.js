@@ -13,6 +13,7 @@ export const path = {
     iconsMono: `${buildFolder}/img/icons/`,
     iconsMulti: `${buildFolder}/img/icons/`,
     html: `${buildFolder}/`,
+    video: `${buildFolder}/`,
   },
   src: {
     js: `${srcFolder}/js/*.js`,
@@ -22,12 +23,14 @@ export const path = {
     iconsMono: `${srcFolder}/img/icons/mono/*.svg`,
     iconsMulti: `${srcFolder}/img/icons/multi/*.svg`,
     html: `${srcFolder}/*.html`,
+    video: `${srcFolder}/*.{mp4,webm}`,
   },
   watch: {
     js: `${srcFolder}/js/**/*.js`,
     scss: `${srcFolder}/scss/**/*.scss`,
     images: `${srcFolder}/img/**/*.{jpg,jpeg,png,svg,gif,webp}`,
     html: `${srcFolder}/**/*.html`,
+    video: `${srcFolder}/**/*.{mp4, webm}`,
   },
   clean: buildFolder,
   buildFolder: buildFolder,
