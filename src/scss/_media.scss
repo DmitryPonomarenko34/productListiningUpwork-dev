@@ -30,10 +30,6 @@
     padding: 50px 0;
   }
 
-  .video-padding-top {
-    padding-top: 350px;
-  }
-
   .info {
     &__title {
       font-size: 50px;
@@ -105,19 +101,32 @@
   }
 }
 
+@include laptop-L {
+  .product {
+    &__img img {
+      max-height: 100%;
+      height: auto;
+    }
+  }
+}
+
 @include laptop {
   body {
     font-size: 18px;
     line-height: 25px;
   }
 
+  .header {
+    padding-top: 15px;
+  }
+
   .link {
     padding: 15px 20px;
   }
 
-  .video-padding-top {
-    padding-top: 180px;
-  }
+  // .video-padding-top {
+  //   padding-top: 180px;
+  // }
 
   .header {
     &__link {
@@ -167,6 +176,11 @@
     &__images {
       flex-wrap: wrap;
     }
+    &--second { 
+      .partners__img:not(:last-child) img {
+          margin-right: 10px;
+      }
+    }
   }
 
   .brands {
@@ -176,8 +190,8 @@
   }
 
   .product {
-    &__img img {
-      height: 500px;
+    &__img-box {
+      margin-top: 50px;
     }
   }
 
@@ -195,6 +209,16 @@
   .pricing {
     &__item {
       // width: 45%;
+    }
+
+    &__action {
+      display: block;
+      text-align: center;
+    }
+
+    &__action-link {
+      margin-left: 0;
+      margin-top: 5px;
     }
 
     &__item-title {
@@ -250,6 +274,10 @@
       font-size: 22px;
     }
 
+    &__item:not(:last-child) {
+      margin-bottom: 25px;
+    }
+
     &__items {
         margin-bottom: 50px;
     }
@@ -258,9 +286,25 @@
   .achievements{
     &__item-num {
       font-size: 60px;
+      line-height: 77px;
     }
     &__item-text {
       font-size: 25px;
+    }
+  }
+}
+
+@include tablet-L {
+  .partners{
+    &__img,
+    &--second .partners__img {
+      display: flex;
+      justify-content: center;
+      width: 33.333%;
+
+      &:nth-child(3n) img {
+        margin-right: 0;
+      }
     }
   }
 }
@@ -274,9 +318,9 @@
     font-size: 16px;
   }
 
-  .video-padding-top {
-    padding-top: 125px;
-  }
+  // .video-padding-top {
+  //   padding-top: 125px;
+  // }
 
   .header-padding-top {
     padding-top: 130px;
@@ -328,20 +372,19 @@
       width: 100%;
     }
   }
-  .product{
-    &__img img {
-      height: 355px;
-    }
-  }
 }
 
 @include portrait-phones{
+  .header-padding-top {
+    padding-top: 80px;
+  }
+
   .video {
     margin-bottom: -50.4%;
   }
 
   .video-padding-top {
-    padding-top: 240px;
+    padding-top: 48.4%;
   }
 
   .header {
@@ -399,9 +442,34 @@
   }
 }
 
+@media (max-width: 400px) {
+
+  .partners{
+    &__img,
+    &--second .partners__img {
+      width: 45%;
+      margin-right: 0;
+      margin-bottom: 5px;
+      justify-content: start;
+
+      &:nth-child(2n) img {
+        margin-right: 0;
+      }
+
+      &:nth-child(even) {
+        justify-content: end;
+      }
+
+      &:nth-child(odd) {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
 @media (max-width: 320px) {
   .video-padding-top {
-    padding-top: 140px;
+    padding-top: 38.4%;
   }
 
   .video {

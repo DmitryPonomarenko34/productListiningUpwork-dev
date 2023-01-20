@@ -10,7 +10,7 @@
   <div class="site-container">
     @@include('html/header.html', {})
     <main class="main">
-      <section class="first header-padding-top">
+      <section class="first header-padding-top" id="firstSection">
         <div class="info">
           <div class="container">
             <div class="info__inner">
@@ -18,13 +18,13 @@
             Introducing ProductListing.AI 👋
           </p>
           <h1 class="info__title">
-            SuperCharge your Amazon
-            <p class="info__break-text">
+            ProductListing.AI - SuperCharge your AmazonProduct
+            <span class="info__break-text">
               Product Listing with the 
               <span class="info__title-accent">
                 Power of AI!
               </span> 
-            </p>
+            </span>
           </h1>
           <p class="info__text">
             Selling Online? Create, Optimize and Enhance all your Product Listings with Artificial Intelligence to 
@@ -36,7 +36,7 @@
             <a class="link info__box-link" href="#">
               Supercharge Your Listing NOW!
             </a>
-             <a class="info__link-phone" href="tel:+33#########">
+             <a class="info__link-phone" href="https://cal.com/productlisting/15min">
               <svg class="info__link-phone-ic">
                 <use xlink:href="@img/icons/mono/spriteMono.svg#phone"></use>
               </svg>
@@ -141,9 +141,9 @@
             <div class="video">
               <div class="container">
                 <div class="video__box">
-                  <video class="lazy" class="lazy-video" style="object-fit: cover" data-src="main.mp4" autoplay loop muted height="100%" width="100%">
-                    <source data-src="main.webm" type="video/webm">
-                    <source data-src="main.mp4" type="video/mp4">
+                  <video style="object-fit: cover" autoplay loop muted height="100%" width="100%">
+                    <source src="main.webm" type="video/webm">
+                    <source src="main.mp4" type="video/mp4">
                   </video>
                 </div>
               </div>
@@ -342,7 +342,7 @@
             <div class="pricing__toggle">
               <span class="pricing__toggle-text">Pay Annually and Save!</span>
                <label class="pricing__toggle-box">
-                  <input class="pricing__toggle-input" type="checkbox" checked>
+                  <input class="pricing__toggle-input" id="pricing-input" type="checkbox" checked>
                   <span class="pricing__toggle-checkbox"></span>
                </label>
             </div>
@@ -384,11 +384,9 @@
               </ul>
 
               <div class="pricing__item-price">
-                <span class="pricing__item-price__num">
-                  49
+                <span class="pricing__item-price__num" id="pricing-lite">
                 </span>
-                <span class="pricing__item-range">
-                  mounth
+                <span class="pricing__item-range" id="pricing-lite-range">
                 </span>
               </div>
               <span class="pricing__item-billed">
@@ -433,11 +431,9 @@
               </ul>
 
               <div class="pricing__item-price">
-                <span class="pricing__item-price__num">
-                  99
+                <span class="pricing__item-price__num" id="pricing-pro">
                 </span>
-                <span class="pricing__item-range">
-                  mounth
+                <span class="pricing__item-range" id="pricing-pro-range">
                 </span>
               </div>
               <span class="pricing__item-billed">
@@ -491,8 +487,8 @@
                   Custom
                 </span>
               </div>
-              <a class="pricing__item-link" href="#">
-                Start Now
+              <a class="pricing__item-link" href="https://forms.gle/Hj1mzc9W4nePpMY48">
+                Contact Us
               </a>
             </div>
           </div>
@@ -523,14 +519,14 @@
               </div>
               <div class="grow">
                 <p class="faq__item-text">
-                  The Al software works by analyzing your listing and using algorithms to optimize the content for higher   engagement with potential customers, resulting in increased conversions and more sales. It can also identify  target audiences through its analysis of your listing data in order to create more compelling copy that resonates  with them better.
+                  AI copywriting is the use of artificial intelligence technology to create and optimize copy for product listings or other marketing materials. The AI software can generate copy quickly and accurately, and can even identify target audiences and optimize the content to appeal to them better.
                 </p>
               </div>
             </div>
             <div class="faq__item">
               <div class="faq__item-box">
                 <h3 class="faq__item-title">
-                  How does the AI software work?
+                  How does the AI software work? 
                 </h3>
                 <svg class="faq__item-ic">
                   <use xlink:href="@img/icons/mono/spriteMono.svg#arrow-right"></use>
@@ -538,14 +534,14 @@
               </div>
               <div class="grow">
                 <p class="faq__item-text">
-                  The Al software works by analyzing your listing and using algorithms to optimize the content for higher   engagement with potential customers, resulting in increased conversions and more sales. It can also identify  target audiences through its analysis of your listing data in order to create more compelling copy that resonates  with them better.
+                  The Al software works by analyzing your listing and using algorithms to optimize the content for higher engagement with potential customers, resulting in increased conversions and more sales. It can also identify target audiences through its analysis of your listing data in order to create more compelling copy that resonates with them better.
                 </p>
               </div>
             </div>
             <div class="faq__item">
               <div class="faq__item-box">
                 <h3 class="faq__item-title">
-                  How quickly can I generate a product listing using Al?
+                  How quickly can I generate a product listing using Al? 
                 </h3>
                 <svg class="faq__item-ic">
                   <use xlink:href="@img/icons/mono/spriteMono.svg#arrow-right"></use>
@@ -553,7 +549,7 @@
               </div>
               <div class="grow">
                 <p class="faq__item-text">
-                  The Al software works by analyzing your listing and using algorithms to optimize the content for higher   engagement with potential customers, resulting in increased conversions and more sales. It can also identify  target audiences through its analysis of your listing data in order to create more compelling copy that resonates  with them better.
+                  You can generate a full product listing in less than 30 seconds with our Al software.
                 </p>
               </div>
             </div>
@@ -568,7 +564,7 @@
               </div>
               <div class="grow">
                 <p class="faq__item-text">
-                  The Al software works by analyzing your listing and using algorithms to optimize the content for higher   engagement with potential customers, resulting in increased conversions and more sales. It can also identify  target audiences through its analysis of your listing data in order to create more compelling copy that resonates  with them better.
+                  No, there are no additional costs involved with using our AI copywriting service. We offer a range of monthly plans that include everything you need to optimize your listings and boost your sales. 
                 </p>
               </div>
             </div>
@@ -583,14 +579,14 @@
               </div>
               <div class="grow">
                 <p class="faq__item-text">
-                  The Al software works by analyzing your listing and using algorithms to optimize the content for higher   engagement with potential customers, resulting in increased conversions and more sales. It can also identify  target audiences through its analysis of your listing data in order to create more compelling copy that resonates  with them better.
+                  Yes, our AI copywriting service supports multiple languages available in custom plans.
                 </p>
               </div>
             </div>
             <div class="faq__item">
               <div class="faq__item-box">
                 <h3 class="faq__item-title">
-                  Is there a free trial or demo available to test out the system first before purchasing a plan?
+                  Is there a free trial or demo available to test out the system first before purchasing a plan? 
                 </h3>
                 <svg class="faq__item-ic">
                   <use xlink:href="@img/icons/mono/spriteMono.svg#arrow-right"></use>
@@ -598,12 +594,11 @@
               </div>
               <div class="grow">
                 <p class="faq__item-text">
-                  The Al software works by analyzing your listing and using algorithms to optimize the content for higher   engagement with potential customers, resulting in increased conversions and more sales. It can also identify  target audiences through its analysis of your listing data in order to create more compelling copy that resonates  with them better.
+                  Yes, we offer a free plan that allows you to test generation of 2 listings per month (Limited to title and bullet points)
                 </p>
               </div>
             </div>
           </div>
-
           <a class="link faq__link" href="#">
             Supercharge Your Listing NOW!
           </a>
