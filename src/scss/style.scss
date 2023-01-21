@@ -43,8 +43,8 @@
   &__title {
     padding-bottom: 73px;
     letter-spacing: -2.8px;
-    font-size: 70px;
-    line-height: 85px;
+    font-size: 67px;
+    line-height: 80px;
     color: #fff; 
     
     @extend %inter-bold;
@@ -60,7 +60,7 @@
       width: 113%;
       height: 100%;
       bottom: -60px;
-      right: -64px;
+      right: -30px;
       background-image: url("@img/icons/multi/spriteMulti.svg#decor_path_line");
 
       @extend %bg;

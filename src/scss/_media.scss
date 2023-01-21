@@ -32,8 +32,8 @@
 
   .info {
     &__title {
-      font-size: 50px;
-      line-height: 65px;
+      font-size: 48px;
+      line-height: 63px;
       padding-bottom: 40px;
     }
 
@@ -311,6 +311,13 @@
       }
     }
   }
+
+  .info {
+    &__title {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
 }
 
 @include tablet {
@@ -327,7 +334,7 @@
   // }
 
   .header-padding-top {
-    padding-top: 130px;
+    padding-top: 80px;
   }
   .header {
     &__link {
@@ -340,13 +347,6 @@
 
   .logo img {
     max-width: 175px;
-  }
-
-  .info {
-    &__title {
-      font-size: 30px;
-      line-height: 40px;
-    }
   }
   .customers {
     &__inner {
@@ -378,10 +378,16 @@
   }
 }
 
-@include portrait-phones{
-  .header-padding-top {
-    padding-top: 80px;
+@media (max-width: 570px) {
+  .info {
+    &__title {
+      font-size: 27px;
+      line-height: 31px;
+    }
   }
+}
+
+@include portrait-phones{
 
   .video-padding-top {
     padding-top: 38.4%;
